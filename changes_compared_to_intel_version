@@ -4,4 +4,9 @@ in arch/x86/include/asm/disabled-features.h:
     #define DISABLED_MASK17        (DISABLE_UINTR)
 because MASK18 is taken by DISABLE_IBT
 
+in arch/x86/include/asm/apic.h:
+    ack_APIC_irq()
+    ->
+    apic_eoi()
+as specified in https://github.com/torvalds/linux/commit/670c04add6e1a22de7c59e282c138ddcf6c9e5a2#diff-c6ea27378ff6703bac08e31fed8d34cffa0286a877dfae368bcc143661dfad84R164
 
