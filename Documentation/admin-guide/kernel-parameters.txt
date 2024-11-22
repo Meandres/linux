@@ -3921,6 +3921,8 @@
 
 	nosync		[HW,M68K] Disables sync negotiation for all devices.
 
+    nouintr     [X86-64] Disable User Interrupts support.
+
 	no_timer_check	[X86,APIC] Disables the code which tests for
 			broken timer IRQ sources.
 

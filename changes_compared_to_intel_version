@@ -1,0 +1,7 @@
+in arch/x86/include/asm/disabled-features.h:
+    #define DISABLED_MASK18        (DISABLE_UINTR)
+    ->
+    #define DISABLED_MASK17        (DISABLE_UINTR)
+because MASK18 is taken by DISABLE_IBT
+
+

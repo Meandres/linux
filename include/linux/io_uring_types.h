@@ -213,6 +213,9 @@ struct io_ring_ctx {
 		struct task_struct	*submitter_task;
 		struct io_rings		*rings;
 		struct percpu_ref	refs;
+        
+        /* User Interrupts file descriptor */
+        struct file         *cq_uintr_f;
 
 		enum task_work_notify_mode	notify_method;
 	} ____cacheline_aligned_in_smp;
