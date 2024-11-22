@@ -209,7 +209,7 @@ static inline void arch_dup_pkeys(struct mm_struct *oldmm,
 #endif
 }
 
-+static inline void uitt_dup_context(struct mm_struct *oldmm,
+static inline void uitt_dup_context(struct mm_struct *oldmm,
                                    struct mm_struct *mm)
 {
 /* TODO: Remove this ugly ifdef */
